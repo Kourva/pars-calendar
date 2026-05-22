@@ -242,7 +242,7 @@ A smart, dynamic date/time input that works with any format and validates in rea
 I've been working on this for a while because of the current situation in IRAN, and I know if I share this repo many of you will be waiting. Sorry for the delay — I wanted to make sure it was actually useful before sharing.
 
 > [!IMPORTANT]
-> Since I can't use npm I can't created package, you need to use this locally from source code!
+> Since I can't use npm, I can't created package either, Even I'm contributing from Girhub mobile with API, not the websites because it's filtred! for now you need to use this locally from source code!
 
 <br>
 
