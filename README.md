@@ -33,7 +33,7 @@ Premium WordPress calendars cost $20-50. Other solutions are either:
 
 After days of work, it's finally ready. **Free. Open. Yours.**
 
-> *"Not to be the best. Just to be useful."*
+### *"Not to be the best. Just to be useful."*
 
 Use it, break it, fix it, share it. Let's build better Persian tools together.
 
@@ -62,7 +62,7 @@ Use it, break it, fix it, share it. Let's build better Persian tools together.
 
 ### Installation
 
-> [!IMPORTANT]
+> [!CAUTION]
 > Currently, I don't have access to npm so there is no package to install! just copy and paste the code and use it.
 
 ```bash
@@ -217,7 +217,7 @@ A smart, dynamic date/time input that works with any format.
 - ✅ Time difference display ("x days ago/later")
 - ✅ Disabled/readonly states
 
-> [!NOTE]
+> [!TIP]
 > The design of the date picker is solid and transparent so you can wrap it inside your style just like your other UI components!
 
 <br>
