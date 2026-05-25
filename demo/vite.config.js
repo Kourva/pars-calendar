@@ -7,7 +7,8 @@ export default defineConfig({
     base: '/pars-calendar/',
     resolve: {
         alias: {
-            '@': resolve(__dirname, '../src')
+            '@': resolve(__dirname, '../src'),
+            'lucide-vue-next': resolve(__dirname, 'node_modules/lucide-vue-next')
         },
         dedupe: ['vue']
     },
@@ -21,7 +22,8 @@ export default defineConfig({
             external: [],
             output: {
                 globals: {
-                    vue: 'Vue'
+                    vue: 'Vue',
+                    'lucide-vue-next': 'lucideVueNext'
                 }
             }
         }
