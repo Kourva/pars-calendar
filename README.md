@@ -190,19 +190,19 @@ interface CalendarEvent {
 
 <br>
 
-## 🧩 DateTimeInput Component
+## 🧩 ParsDatePicker Component
 
 A smart, dynamic date/time input that works with any format.
 
 ```vue
 <!-- Date only -->
-<CalendarInput format="yyyy/mm/dd" v-model="date" />
+<ParsDatePicker format="yyyy/mm/dd" v-model="date" />
 
 <!-- With time -->
-<CalendarInput format="yyyy/mm/dd hh:mi" v-model="datetime" />
+<ParsDatePicker format="yyyy/mm/dd hh:mi" v-model="datetime" />
 
 <!-- Gregorian output -->
-<CalendarInput 
+<ParsDatePicker 
     format="yyyy-mm-dd" 
     v-model="gregorianDate"
     output-format="gregorian" 
