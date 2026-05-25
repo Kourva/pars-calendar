@@ -1,12 +1,12 @@
 <div align="center">
     <h1>📅 Pars Calendar</h1>
-    <p><strong>A beautiful, theme-ready Jalali (Persian) calendar component for Vue 3 & Nuxt 3</strong></p>    
+    <p><strong>A beautiful, theme-ready Jalali (Persian) calendar component for Vue 3+ & Nuxt 3+</strong></p>    
     <br>
     <p>
-        <img src="https://img.shields.io/badge/Vue-3.x-green" alt="Vue 3">
-        <img src="https://img.shields.io/badge/Nuxt-4.x-green" alt="Nuxt 3">
+        <img src="https://img.shields.io/badge/Vue-3.x+-green" alt="Vue 3">
+        <img src="https://img.shields.io/badge/Nuxt-3.x+-green" alt="Nuxt 3">
         <img src="https://img.shields.io/badge/TypeScript-blue" alt="TypeScript">
-        <img src="https://img.shields.io/badge/License-GPL3.0-yellow" alt="GNU License">
+        <img src="https://img.shields.io/badge/License-MIT-magenta" alt="MIT License">
     </p>
 </div>
 
