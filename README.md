@@ -217,6 +217,9 @@ A smart, dynamic date/time input that works with any format.
 - ✅ Time difference display ("x days ago/later")
 - ✅ Disabled/readonly states
 
+> [!NOTE]
+> The design of the date picker is solid and transparent so you can wrap it inside your style just like your other UI components!
+
 <br>
 
 ## 🧩 Nuxt 3 Usage
