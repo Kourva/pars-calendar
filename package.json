@@ -1,0 +1,41 @@
+{
+    "name": "pars-calendar",
+    "version": "1.0.0",
+    "description": "A beautiful, theme-ready Jalali (Persian) calendar component for Vue 3 & Nuxt 3",
+    "type": "module",
+    "main": "./src/ParsCalendar.vue",
+    "exports": {
+        ".": "./src/ParsCalendar.vue",
+        "./style.css": "./src/assets/pars-calendar.css"
+    },
+    "peerDependencies": {
+        "vue": "^3.0.0",
+        "lucide-vue-next": "^0.469.0"
+    },
+    "peerDependenciesMeta": {
+        "lucide-vue-next": {
+            "optional": false
+        }
+    },
+    "keywords": [
+        "vue",
+        "vue3",
+        "calendar",
+        "persian",
+        "jalali",
+        "shamsi",
+        "datepicker",
+        "persian-calendar",
+        "jalali-calendar"
+    ],
+    "author": "Kourva",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kourva/pars-calendar"
+    },
+    "bugs": {
+        "url": "https://github.com/kourva/pars-calendar/issues"
+    },
+    "homepage": "https://github.com/kourva/pars-calendar#readme"
+}
