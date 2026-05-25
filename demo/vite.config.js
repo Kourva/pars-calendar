@@ -10,12 +10,21 @@ export default defineConfig({
             '@': resolve(__dirname, '../src')
         }
     },
+    optimizeDeps: {
+        include: ['vue', 'lucide-vue-next']
+    },
     server: {
         port: 3000,
         open: true
     },
     build: {
         outDir: 'dist',
-        emptyOutDir: true
+        emptyOutDir: true,
+        rollupOptions: {
+            external: [],
+            output: {
+                manualChunks: undefined
+            }
+        }
     }
 })
