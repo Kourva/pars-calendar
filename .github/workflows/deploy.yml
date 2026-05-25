@@ -3,7 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or master
+      - main
+      - master
   workflow_dispatch:
 
 permissions:
@@ -26,12 +27,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
       - name: Install Dependencies
         run: |
           cd demo
-          npm ci
+          npm install --no-package-lock
 
       - name: Build Demo
         run: |
