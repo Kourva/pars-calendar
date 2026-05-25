@@ -193,7 +193,7 @@ const getThemeColor = (theme) => {
 </script>
 
 <style>
-@import '../src/assets/calendar.css';
+@import '../src/assets/pars-calendar.css';
 
 * {
     margin: 0;
