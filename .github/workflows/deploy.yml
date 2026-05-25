@@ -5,8 +5,13 @@ on:
     branches: [ main, master ]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,14 +20,49 @@ jobs:
         with:
           node-version: '20'
           
-      - name: Build
+      - name: Create package.json if missing
+        run: |
+          cd demo
+          cat > package.json << 'EOF'
+          {
+            "name": "pars-calendar-demo",
+            "version": "1.0.0",
+            "type": "module",
+            "scripts": {
+              "build": "vite build"
+            },
+            "dependencies": {
+              "vue": "^3.5.0",
+              "lucide-vue-next": "^0.469.0"
+            },
+            "devDependencies": {
+              "@vitejs/plugin-vue": "^5.2.0",
+              "vite": "^6.0.0"
+            }
+          }
+          EOF
+          
+      - name: Install and Build
         run: |
           cd demo
           npm install
           npm run build
           
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./demo/dist
+          path: './demo/dist'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
