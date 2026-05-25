@@ -8,14 +8,11 @@ export default defineConfig({
     resolve: {
         alias: {
             '@': resolve(__dirname, '../src')
-        }
+        },
+        dedupe: ['vue']
     },
     optimizeDeps: {
         include: ['vue', 'lucide-vue-next']
-    },
-    server: {
-        port: 3000,
-        open: true
     },
     build: {
         outDir: 'dist',
@@ -23,8 +20,14 @@ export default defineConfig({
         rollupOptions: {
             external: [],
             output: {
-                manualChunks: undefined
+                globals: {
+                    vue: 'Vue'
+                }
             }
         }
+    },
+    server: {
+        port: 3000,
+        open: true
     }
 })
