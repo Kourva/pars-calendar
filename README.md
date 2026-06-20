@@ -56,6 +56,8 @@ Use it, break it, fix it, share it. Let's build better Persian tools together.
 | 📆 **5 Views** | Month, Week, Day, Agenda, Year |
 | 🧩 **DateTimeInput** | Format-aware date/time input component |
 
+There are some issues and other features that need to be fixed or added, i will do it later...
+
 <br>
 
 ## 🚀 Quick Start
